@@ -1,0 +1,2 @@
+openssl des3 -salt -in infile.txt -out out.txt
+openssl des3 -d -salt -in out.txt -out normalfile.txt
