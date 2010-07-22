@@ -1,3 +1,3 @@
 tar -cjf dandm.tar.bz2 ./temp/*
-openssl des3 -salt -in infile.txt -out out.txt
-openssl des3 -d -salt -in out.txt -out normalfile.txt
+openssl des3 -salt -in normal_bz2_format_file  -out encrypted_file
+openssl des3 -d -salt -in encrypted_file  -out normalfile_bz2_format_file
